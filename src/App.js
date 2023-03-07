@@ -1,25 +1,49 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+// Bring inn usedState Hook
+import cardImages from './Models/cardimgs'
+import symbols from './Models/symbols';
+//Bring in Data
+import Card from './components/Card';
+import Button from './components/Button';
+//Bring in our Components
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+  //count
+const [count, setCount] = useState(0)
+//currentPic
+const [currentPic, setCurrentPic] = useState(cardImages[count])
+
+//Established state
+const changeCount = () => {
+  setCount(count + 1);
+  console.log("Count is Currently:",count)
+  setCurrentPic(cardImages[count]);
+  console.log("Pic is Currently:",currentPic)
+};
+const reverseCount = () => {
+  setCount(count - 1);
+  console.log("Count is Currently:",count)
+  setCurrentPic(cardImages[count]);
+  console.log("Pic is Currently:",currentPic)
+};
+
+
+//create functions/methods
+
+
+return (
+  <div className="App">
+    <Card currentCount={count} images={currentPic} />
+
+    <div className="btnContainer">
+      <Button togglePic={reverseCount} icons={symbols.left} />
+      <Button togglePic={changeCount} icons={symbols.right} />
     </div>
-  );
+  </div>
+);
 }
 
 export default App;

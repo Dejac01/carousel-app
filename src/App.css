@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.mainCard{
+  padding: 2em;
+}
+.btnContainer{display: flex;
+}
+.mainImg{
+  height:450px;
+  width:450px;
+}
