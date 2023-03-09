@@ -41,6 +41,8 @@
   padding: 2em;
 }
 .btnContainer{display: flex;
+  border:solid palevioletred;
+  padding-left: 30%;
 }
 .mainImg{
   height:450px;

@@ -11,3 +11,5 @@ const cardImages= [
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkUvUARvJhzv-M_XpiSMVJ22PNkSvqPccnEA&usqp=CAU",
     
     ]
+
+    export default cardImages
