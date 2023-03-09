@@ -17,13 +17,13 @@ const [count, setCount] = useState(0)
 const [currentPic, setCurrentPic] = useState(cardImages[count])
 
 //Established state
-const changeCount = () => {
+const changeCount = ()=>{
   setCount(count + 1);
   console.log("Count is Currently:",count)
   setCurrentPic(cardImages[count]);
   console.log("Pic is Currently:",currentPic)
 };
-const reverseCount = () => {
+const reverseCount = ()=>{
   setCount(count - 1);
   console.log("Count is Currently:",count)
   setCurrentPic(cardImages[count]);
@@ -36,7 +36,7 @@ const reverseCount = () => {
 
 return (
   <div className="App">
-    <Card currentCount={count} images={currentPic} />
+    <Card currentCount={count} images={currentPic}/>
 
     <div className="btnContainer">
       <Button togglePic={reverseCount} icons={symbols.left} />
