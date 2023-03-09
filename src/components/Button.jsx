@@ -3,7 +3,7 @@ import React from 'react'
 function Button(props) {
   return (
 <div>
-<button>{props.icons} </button>
+<button onClick={props.togglePic}> {props.icons} </button>
     </div>
 
   )
