@@ -2,9 +2,9 @@ import React from 'react'
 
 function Button(props) {
   return (
-<>
-<button>{props.icon} </button>
-    </>
+<div>
+<button>{props.icons} </button>
+    </div>
 
   )
 }

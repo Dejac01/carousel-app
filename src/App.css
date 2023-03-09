@@ -40,7 +40,8 @@
 .mainCard{
   padding: 2em;
 }
-.btnContainer{display: flex;
+.btnContainer{
+  display: flex;
   padding-left: 47%;
 }
 .mainImg{
