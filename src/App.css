@@ -43,6 +43,7 @@
 .btnContainer{
   display: flex;
   padding-left: 47%;
+  color: blue;
 }
 .mainImg{
   height:450px;
